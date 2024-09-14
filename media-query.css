@@ -1,4 +1,19 @@
 @media screen and (max-width:1200px){
+    header {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        position: absolute;
+        top: 5px;
+        left: 180px;
+    }
+
+    .logo img {
+       width: 100px;
+    }
+    
     main {
         max-width: 1200px;
     } 
