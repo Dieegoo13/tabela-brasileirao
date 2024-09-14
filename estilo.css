@@ -1,0 +1,243 @@
+
+/* CONFIGURAÇÔES GERAIS */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #bfe3f3a1;
+}
+
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+ }
+
+ h3 {
+    color: #0400ff;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+ }
+
+ /* ESTILO DO CABEÇALHO */
+
+ header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #040181;
+    padding: 65px;
+    height: 80px;
+ }
+
+ header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ header nav ul li {
+    display: inline-block;
+    padding: 20px;
+ }
+
+ header ul li a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 60px;
+    transition: font-size 0.1s ease;
+ }
+
+ header a:hover {
+    color: #c1f804;
+    font-size: 18px;
+    transform: scale(1.15);
+ }
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 180px;
+}
+
+/* ESTILOS DA TABELA */
+
+
+.tabela-classificacao table {
+    border-collapse:collapse;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.tabela-classificacao tr  th {
+    background-color: #b9f5e6d0;
+}
+
+
+table td, td {
+    padding: 15px;
+}
+
+
+
+.tabela-classificacao > table  img {
+    width: 30px;
+    height: auto; 
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.vaga-libertadores td {
+    background-color: #00ff00d0;
+  }
+
+  .pre-libertadores {
+    background-color: #1dce43ea;
+  }
+
+  .sul-americana {
+    background-color: #1147fad2;
+  }
+
+  .zona-rebaixamento {
+    background-color: #fc02029d;
+  }
+
+/* ESTILO DAS MATERIAS    */
+
+
+/* Borda para o article */
+.interface > article {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    background-color: #ccf2f5d0;
+    box-shadow: 1px 1px 2px 2px #beeaf5;
+    transform: translate(-240px, -1400px);
+}
+
+/* Interface principal */
+.materias > .interface {
+    display: flex; 
+    justify-content: flex-start; 
+    padding-left: 20px; 
+}
+
+/* Estilo do título */
+.materias .interface article h3 {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+/* Estilo das imagens */
+article img {
+    margin: 10px 0; 
+    width: 100%; 
+    max-width: 240px; 
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.658);
+}
+
+/* Estilo dos parágrafos */
+.interface article p {
+    font-family: "Sriracha", cursive;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: left; 
+    color: #0400ff;
+}
+
+/* Estilo dos links */
+.interface article a {
+    color: #ff3300;
+    font-weight: 600;
+}
+
+.interface article a:hover {
+    color: #ff0000;
+    font-size: 25px;
+}
+
+/* ESTILO RODADAS */
+
+.rodadas {
+    border-radius: 12px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: end; 
+    padding: 70px;
+    width: 22%;
+    height: auto;
+    background-color: #ccf2f5d0;
+    box-shadow: 1px 1px 2px 2px #beeaf5;
+    transform: translate(1260px, -2110px);
+}
+ 
+.rodadas > table {
+   border-collapse:collapse;
+   padding: 10px;
+}
+
+.rodada {
+    display: none; 
+}
+.active {
+    display: table; 
+}
+.pagination-buttons {
+    margin: 10px 0px 0px;
+    text-align: center;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center; /* Alinha os botões horizontalmente ao centro */
+    margin: 0px; /* Espaçamento superior e inferior dos botões */
+    position: fixed; /* Fixa os botões no topo da página */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.pagination-buttons > button {
+    
+    border: none;
+    background: none;
+    font-size: 30px; 
+    cursor: pointer;
+    padding: 20px;
+    margin: 0px;
+}
+
+.rodadas table th {
+    padding: 0px;
+    font-size: 18px;
+    transform: translate(65%, 4%);
+}
+
+.rodadas table img {
+    width: 30px;
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+

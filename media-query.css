@@ -1,0 +1,25 @@
+@media screen and (max-width:1200px){
+    main {
+        max-width: 1200px;
+    } 
+
+    nav{
+        display: none;
+    }
+
+    .tabela-classificacao table {
+      width: 140px;
+      transform: translate(108%, -0%);
+    }
+
+    .interface > article {
+        transform: translate(-2%, 4%);
+    }
+
+    .rodadas {
+    
+        transform: translate(2%, 10%);
+        width: 280px;
+        
+    }
+}
