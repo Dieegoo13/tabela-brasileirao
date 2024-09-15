@@ -3,6 +3,7 @@
     header {
         width: 100%;
         box-sizing: border-box;
+        max-width: 442px;
     }
 
     
@@ -127,6 +128,11 @@
 
     i#burguer:hover {
         color: #c1f804;
+    }
+
+    footer {
+        max-width: 380px;
+        font-size: 15px;
     }
 
 }
