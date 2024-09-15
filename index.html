@@ -11,14 +11,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Varela+Round&display=swap" rel="stylesheet">
         <!-- FIM FONTES DO GOOGLE -->
 
+         <!-- GOOGLE ICONS -->
+
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- FIM GOOGLE ICONS -->
 
 
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="media-query.css">
     <title>Tabela</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <header>
          <div class="interface">
@@ -29,13 +35,18 @@
         
 
             <nav class="menu-desktop">
+                
+                
+                <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
 
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Tabela</a></li>
-                    <li><a href="">Times</a></li>
-                    <li><a href="">Noticias</a></li>
-                </ul>
+                <menu id="itens">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Tabela</a></li>
+                        <li><a href="">Times</a></li>
+                        <li><a href="">Noticias</a></li>
+                    </ul>
+                </menu>
 
             </nav>
 
@@ -176,7 +187,7 @@
                 </tr>
 
                 <tr class="sul-americana">
-                    <td> 17 <img src="imagens/Corinthians_simbolo.png" ><span> CORINTHIANS</span></td>
+                    <td> 14 <img src="imagens/Corinthians_simbolo.png" ><span> CORINTHIANS</span></td>
                     <td>46</td>
                     <td>38</td>
                     <td>10</td>
@@ -268,7 +279,7 @@
       </section>
 
 
-      <section class="rodadas">
+    <section class="rodadas">  <!-- RODADAS DO CAMPEONATO --> 
         <!-- Rodada 1 -->
         <div class="rodada active" id="rodada1">
             <table>
@@ -339,34 +350,13 @@
         </div>
     </section>
 
+    <footer>
+        <p>projeto Realizado para fins pedagógicos</p>
+    </footer>
+
    </main>
 
-   <script>
-    let currentRound = 1;
-    const totalRounds = 3; // Atualize conforme o número total de rodadas
-
-    function showRound(round) {
-        document.querySelectorAll('.rodada').forEach((element, index) => {
-            element.classList.remove('active');
-            if (index + 1 === round) {
-                element.classList.add('active');
-            }
-        });
-    }
-
-    function nextRound() {
-        currentRound = (currentRound % totalRounds) + 1;
-        showRound(currentRound);
-    }
-
-    function previousRound() {
-        currentRound = (currentRound - 2 + totalRounds) % totalRounds + 1;
-        showRound(currentRound);
-    }
-
-    // Inicializa a primeira rodada
-    showRound(currentRound);
-</script>
+   <script src="script.js"></script>
    
 
 </body>

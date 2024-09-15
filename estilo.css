@@ -6,8 +6,13 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
+body, html {
     background-color: #bfe3f3a1;
+    margin: 0;
+    padding: 0;
+     /* O body e o html ocupam 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -58,7 +63,7 @@ main {
 
  header a:hover {
     color: #c1f804;
-    font-size: 18px;
+    font-size: 17px;
     transform: scale(1.15);
  }
 
@@ -67,6 +72,24 @@ main {
     top: 20px;
     left: 180px;
 }
+
+i#burguer {
+    color: white;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    text-align: right;
+    align-items: right;
+    position: absolute;
+    transform: translate(0px, 50px);
+}
+
+i#burguer:hover {
+    color: #c1f804;
+}
+
+
+
 
 /* ESTILOS DA TABELA */
 
@@ -111,7 +134,7 @@ table td, td {
   }
 
   .zona-rebaixamento {
-    background-color: #e4222283;
+    background-color: #f31616b0;
   }
 
 /* ESTILO DAS MATERIAS    */
@@ -241,3 +264,12 @@ article img {
     margin-right: 10px;
 }
 
+
+footer {
+    background-color: #040181;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 30px;
+}
