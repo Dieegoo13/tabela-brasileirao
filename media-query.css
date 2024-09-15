@@ -6,12 +6,12 @@
 
     .logo {
         position: absolute;
-        top: 5px;
+        top: 20px;
         left: 180px;
     }
 
     .logo img {
-       width: 100px;
+       width: 70px;
     }
     
     main {
@@ -23,8 +23,17 @@
     }
 
     .tabela-classificacao table {
-      width: 140px;
-      transform: translate(108%, -0%);
+      width: 60px;
+      transform: translate(309%, -0%);
+    }
+
+    .tabela-classificacao td, tr, span {
+        font-size: 12px;
+        padding: 14px;
+    }
+
+    .tabela-classificacao > table  img {
+        width: 20px;
     }
 
     .interface > article {
@@ -37,4 +46,11 @@
         width: 280px;
         
     }
+
+    .team {
+        display: flex;
+        align-items: center;
+    }
+
+
 }
