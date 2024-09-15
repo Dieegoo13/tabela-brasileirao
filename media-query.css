@@ -49,7 +49,7 @@
         left: 20px;
         font-size: 30px; 
         z-index: 1000; 
-        transform: translate(-150px, 40px);
+        transform: translate(-120px, 40px);
     }
 
     i#burguer:hover {
@@ -61,12 +61,12 @@
 
     .tabela-classificacao table {
       width: 60px;
-      transform: translate(309%, -0%);
+      transform: translate(300%, -0%);
     }
 
     .tabela-classificacao td, tr, span {
         font-size: 12px;
-        padding: 14px;
+        padding: 10px;
     }
 
     .tabela-classificacao > table  img {
