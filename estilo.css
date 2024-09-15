@@ -41,6 +41,7 @@ main {
     background-color: #040181;
     padding: 65px;
     height: 80px;
+    position: relative;
  }
 
  header > .interface {
@@ -72,24 +73,6 @@ main {
     top: 20px;
     left: 180px;
 }
-
-i#burguer {
-    color: white;
-    display: block;
-    padding: 10px;
-    cursor: pointer;
-    text-align: right;
-    align-items: right;
-    position: absolute;
-    transform: translate(0px, 50px);
-}
-
-i#burguer:hover {
-    color: #c1f804;
-}
-
-
-
 
 /* ESTILOS DA TABELA */
 

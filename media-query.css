@@ -94,7 +94,7 @@
    }
 
 
-    menu#itens {
+    menu#itens {    
         font-size: 14px;
         background-color: #0301819f; 
         border-radius: 8px;
@@ -117,11 +117,16 @@
         display: block;
         padding: 20px;
         cursor: pointer;
-        position: fixed; 
-        top: 20px; 
+        position: sticky; 
+        top: 60px; 
         left: 20px;
         font-size: 30px; 
         z-index: 1000; 
+        transform: translate(-180px, 40px);
+    }
+
+    i#burguer:hover {
+        color: #c1f804;
     }
 
 }
