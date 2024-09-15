@@ -10,15 +10,13 @@ body, html {
     background-color: #bfe3f3a1;
     margin: 0;
     padding: 0;
-     /* O body e o html ocupam 100% da altura da tela */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    width: 100wh;
+    height: 100hv;
 }
 
-main {
-    padding: 0px;
-    margin: 0px;
-}
 
 .interface{
     max-width: 1280px;
