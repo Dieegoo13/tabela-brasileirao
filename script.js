@@ -1,28 +1,30 @@
 let currentRound = 1;
-const totalRounds = 3; // Atualize conforme o número total de rodadas
+const totalRounds = document.querySelectorAll('.rodada').length;
 
 function showRound(round) {
-    document.querySelectorAll('.rodada').forEach((element, index) => {
-        element.classList.remove('active');
-        if (index + 1 === round) {
-            element.classList.add('active');
-        }
-    });
+    // Remove a classe 'active' de todas as rodadas
+    document.querySelectorAll('.rodada').forEach(rodada => rodada.classList.remove('active'));
+    
+    // Adiciona a classe 'active' na rodada selecionada
+    document.getElementById(`rodada${round}`).classList.add('active');
 }
 
 function nextRound() {
-    currentRound = (currentRound % totalRounds) + 1;
-    showRound(currentRound);
+    if (currentRound < totalRounds) {
+        currentRound++;
+        showRound(currentRound);
+    }
 }
 
 function previousRound() {
-    currentRound = (currentRound - 2 + totalRounds) % totalRounds + 1;
-    showRound(currentRound);
+    if (currentRound > 1) {
+        currentRound--;
+        showRound(currentRound);
+    }
 }
 
-// Inicializa a primeira rodada
+// Inicializar mostrando a primeira rodada
 showRound(currentRound);
-
 
 
 

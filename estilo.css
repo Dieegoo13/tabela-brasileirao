@@ -1,22 +1,15 @@
 
 /* CONFIGURAÇÔES GERAIS */
-*{
-    padding: 0px;
+* {
     margin: 0px;
+    padding: 0px;
+}
+
+body {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-}
-
-body, html {
     background-color: #bfe3f3a1;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
 }
-
-
 
 .interface{
     max-width: 1280px;
@@ -24,29 +17,28 @@ body, html {
  }
 
  h3 {
-    color: #0400ff;
+    color: #002fff;
     font-family: "Varela Round", sans-serif;
     font-weight: 900;
     font-size: 28px;
  }
 
+ p{
+    font-size: 18px;
+    font-weight: bold;
+ }
+  
+
+
  /* ESTILO DO CABEÇALHO */
 
  header {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #040181;
-    padding: 65px;
-    height: 80px;
-    position: relative;
- }
-
- header > .interface {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-}
+    background-color: #040181;
+    padding: 30px;
+    margin-bottom: 50px;
+ }
 
  header nav ul li {
     display: inline-block;
@@ -56,7 +48,7 @@ body, html {
  header ul li a {
     text-decoration: none;
     color: #fff; 
-    padding: 60px;
+    padding: 50px;
     transition: font-size 0.1s ease;
  }
 
@@ -73,18 +65,51 @@ body, html {
 }
 
 .logo img {
-    width: 100px;
+    width: 80px;
 }
+
+/* CONFIGURAÇÔES DO CONTAINER PAI    */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* ESTILO DAS MATERIAS    */
+
+
+.materias article {
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 380px;
+    border-radius: 12px;
+    background-color: #ccf2f5d0;
+    box-shadow: 1px 1px 2px 2px #beeaf5;
+}
+
+.materias .interface article h3 {
+    margin-bottom: 20px;
+    text-align: left; 
+    text-shadow: 2px 2px 0px rgba(29, 29, 29, 0.863);
+}
+
+.materias article img {
+    margin: 10px 0; 
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.658);
+}
+
+.materias article p {
+   font-size: 14px;
+}
+
 
 /* ESTILOS DA TABELA */
 
-
 .tabela-classificacao table {
     border-collapse:collapse;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 18px;
     font-weight: 600;
 }
@@ -96,7 +121,6 @@ body, html {
 table td, td {
     padding: 15px;
 }
-
 
 
 .tabela-classificacao > table  img {
@@ -122,125 +146,25 @@ table td, td {
     background-color: #f31616b0;
   }
 
-/* ESTILO DAS MATERIAS    */
 
-
-/* Borda para o article */
-.interface > article {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    justify-content: center; 
-    padding: 20px;
-    width: 400px;
-    height: auto;
-    border-radius: 12px;
-    background-color: #ccf2f5d0;
-    box-shadow: 1px 1px 2px 2px #beeaf5;
-    transform: translate(-240px, -1400px);
-}
-
-/* Interface principal */
-.materias > .interface {
-    display: flex; 
-    justify-content: flex-start; 
-    padding-left: 20px; 
-}
-
-/* Estilo do título */
-.materias .interface article h3 {
-    margin-bottom: 20px;
-    text-align: left; 
-}
-
-/* Estilo das imagens */
-article img {
-    margin: 10px 0; 
-    width: 100%; 
-    max-width: 240px; 
-    height: auto; 
-    border-radius: 8px;
-    box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.658);
-}
-
-/* Estilo dos parágrafos */
-.interface article p {
-    font-family: "Sriracha", cursive;
-    padding-bottom: 20px;
-    font-size: 20px;
-    text-align: left; 
-    color: #0400ff;
-}
-
-/* Estilo dos links */
-.interface article a {
-    color: #ff3300;
-    font-weight: 600;
-}
-
-.interface article a:hover {
-    color: #ff0000;
-    font-size: 25px;
-}
-
-/* ESTILO RODADAS */
-
+  /* ESTILOS DA RODADA */
+  
 .rodadas {
+    padding: 10px;
     border-radius: 12px;
+    text-align: center;
+    align-items: center;
     font-family: "Varela Round", sans-serif;
     font-weight: 600;
-    display: flex;
-    align-items: flex-end; 
-    justify-content: end; 
-    padding: 70px;
-    width: 22%;
-    height: auto;
+    height: 400px;
     background-color: #ccf2f5d0;
     box-shadow: 1px 1px 2px 2px #beeaf5;
-    transform: translate(1260px, -2110px);
 }
  
-.rodadas > table {
-   border-collapse:collapse;
-   padding: 10px;
-}
-
-.rodada {
-    display: none; 
-}
-.active {
-    display: table; 
-}
-.pagination-buttons {
-    margin: 10px 0px 0px;
-    text-align: center;
-}
-
-.pagination-buttons {
-    display: flex;
-    justify-content: center; /* Alinha os botões horizontalmente ao centro */
-    margin: 0px; /* Espaçamento superior e inferior dos botões */
-    position: fixed; /* Fixa os botões no topo da página */
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-
-.pagination-buttons > button {
-    
-    border: none;
-    background: none;
-    font-size: 30px; 
-    cursor: pointer;
-    padding: 20px;
-    margin: 0px;
-}
 
 .rodadas table th {
-    padding: 0px;
-    font-size: 18px;
-    transform: translate(65%, 4%);
+    padding-left: 180px;
+    font-size: 16px;
 }
 
 .rodadas table img {
@@ -249,12 +173,56 @@ article img {
     margin-right: 10px;
 }
 
-
-footer {
-    background-color: #040181;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 300;
-    padding: 30px;
+.rodada {
+    display: none;
 }
+
+.rodada.active {
+    display: block;
+}
+
+.pagination-buttons {
+    margin: 0; /* Remove a margem extra */
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    padding: 0; /* Remove qualquer padding extra da section */
+}
+
+.pagination-buttons > button {
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 20px 60px; /* Ajuste o padding para algo menor */
+    margin: 0px;
+}
+
+.rodadas input[type="number"]  {
+    border-color: #fff;
+    margin: 20px;
+    padding: 12px;
+    width: 10px;
+    height: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #ffffff6c;
+  
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

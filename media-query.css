@@ -1,13 +1,12 @@
 @media screen and (max-width:1200px){
     /* ESTILO HEADER */
     header {
-        width: 100%;
         box-sizing: border-box;
+        padding: 20px;
     }
 
     
     .logo {
-        position: absolute;
         top: 20px;
         left: 180px;
     }
@@ -19,6 +18,22 @@
     main {
         max-width: 1200px;
     } 
+
+
+        /* ORDEM DE EXIBICAO */
+
+    .tabela-classificacao {
+        order: 1; /* A tabela será mostrada primeiro */
+     }
+
+    .materias {
+        order: 3; /* As matérias serão mostradas depois da tabela */
+    }
+
+    .rodadas {
+        order: 2; /* As rodadas serão mostradas por último */
+    }
+    
 
     
     menu#itens {    
@@ -59,9 +74,12 @@
 
     /* ESTILO TABELA DE CLASSIFICACAO */
 
+    .tabela-classificacao {
+        margin-bottom: 20px;
+    }
+
     .tabela-classificacao table {
       width: 60px;
-      transform: translate(300%, -0%);
     }
 
     .tabela-classificacao td, tr, span {
@@ -81,53 +99,54 @@
 
 
 /* ESTILO TABELA DAS MATERIAS */
-    .interface > article {
-        transform: translate(-2%, 4%);
-    }
+
 
 
     /* ESTILO TABELA DAS RODADAS */
 
     .rodadas table img {
-        width: 40px;
-        vertical-align: middle; 
+        width: 25px;
         padding: 10px;
-        margin-right: 0px;
-        margin-left: 0px;
     }
 
     .rodadas {
-        transform: translate(4%, 10%);
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
         width: 400px;
-        padding: 40px;
-        
+        height: 420px;
+        margin-bottom: 60px;
+ 
     }
 
     .rodadas table th {
-        font-size: 14px;
-        transform: translate(75%, 4%);
+        font-size: 12spx;
     }
+
     
-   
     .teamOne {
         display: flex;
-        align-items: center; 
-        margin-right: -40px;
-        padding: 30px;
-    }
-
-    .pagination-buttons > button {
-    
-        margin-left: 100px;
-        margin-right: 100px;
-        display: flex;
-        text-align: center;
         align-items: center;
-    }
+        justify-content: center; 
+    } 
 
-   footer{
-      transform: translate(-0%, 100%);
-   }
+    .alinhamento {
+        display: flex;
+        justify-content: start;
+        align-items: center; 
+        gap: 10px; 
+    } 
+
+
+    .rodadas input[type="number"]  {
+    
+        margin: 0px;
+        padding: 8px;
+        width: 5px;
+        height: 5px;
+        font-size: 12px;  
+    }
 
 
 

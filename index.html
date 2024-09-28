@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="media-query.css">
     <title>Tabela</title>
 </head>
-<body onresize="mudouTamanho()">
+
 
     <header>
          <div class="interface">
@@ -53,311 +53,418 @@
          </div>
     </header>
     
-   <main>
+    <body onresize="mudouTamanho()">
+        
+        <main>
+            <div class="container">
 
-     <section class="tabela-classificacao">   <!--  TABELA DE CLASSIFICAÇÃO -->
+
+                <section class="materias">  <!-- MATERIAS DE DESTAQUES LATERAL --> 
+
+                    <div class="interface">
+            
+                        <article>
+                                
+                            <h3>DESTAQUES DA SEMANA</h3>
+                            
+                            <img src="imagens/vasco-rebaixado.png" alt="">
+            
+                            <p>Vasco irá disputar a <a href="#">Serie B</a> mais uma vez.</p>
+            
+                            <img src="imagens/cruzeiroxpalmeiras.webp" alt="">
+            
+                            <p> 
+                                Cruzeiro vence Palmeiras na última rodada em duelo de título.
+                            </p>
+
+                                                        
+                            <img src="imagens/vasco-rebaixado.png" alt="">
+            
+                            <p>Vasco irá disputar a <a href="#">Serie B</a> mais uma vez.</p>
+            
+                            <img src="imagens/cruzeiroxpalmeiras.webp" alt="">
+            
+                            <p> 
+                                Cruzeiro vence Palmeiras na última rodada em duelo de título.
+                            </p>
+
+                                                        
+                            <img src="imagens/vasco-rebaixado.png" alt="">
+            
+                            <p>Vasco irá disputar a <a href="#">Serie B</a> mais uma vez.</p>
+            
+                            <img src="imagens/cruzeiroxpalmeiras.webp" alt="">
+            
+                            <p> 
+                                Cruzeiro vence Palmeiras na última rodada em duelo de título.
+                            </p>
+
+                                                        
+                            <img src="imagens/vasco-rebaixado.png" alt="">
+            
+                            <p>Vasco irá disputar a <a href="#">Serie B</a> mais uma vez.</p>
+            
+                            <img src="imagens/cruzeiroxpalmeiras.webp" alt="">
+            
+                            <p> 
+                                Cruzeiro vence Palmeiras na última rodada em duelo de título.
+                            </p>
+                             
+                        </article>
+            
+                    </div>
+            
+                </section> 
+
+                <section class="tabela-classificacao">  <!--  TABELA DE CLASSIFICAÇÃO -->
              
-            <table> 
-                <tr>
-                <th> #Time</th>
-                <th>P</th>
-                <th>J</th>
-                <th>V</th>
-                <th>E</th>
-                <th>D</th>
-                </tr>
-        
-                <tr class="vaga-libertadores"> 
-                <td class="team" > 1 <img src="imagens/Escudo_Cruzeiro_1996.png" ><span> CRUZEIRO</span></td>
-                <td> 77 </td>
-                <td>38</td>
-                <td>20</td>
-                <td>10</td>
-                <td>8</td>
-                </tr>
-        
-                <tr class="vaga-libertadores">
-                    <td class="team"> 2 <img src="imagens/Palmeiras_logo.svg.webp"><span> PALMEIRAS</span></td>
-                <td>73</td>
-                <td>38</td>
-                <td>19</td>
-                <td>9</td>
-                <td>8</td>
-                </tr>
+                    <table> 
+                        <tr>
+                        <th> #Time</th>
+                        <th>P</th>
+                        <th>J</th>
+                        <th>V</th>
+                        <th>E</th>
+                        <th>D</th>
+                        </tr>
                 
-                <tr class="vaga-libertadores">
-                    <td class="team"> 3 <img src="imagens/Gremio_logo.png" ><span> GRÊMIO</span></td>
-                    <td>66</td>
-                    <td>38</td>
-                    <td>19</td>
-                    <td>11</td>
-                    <td>7</td>
-                </tr>
-
-                <tr class="vaga-libertadores">
-                    <td class="team" > 4 <img src="imagens/Club_Athletico_Paranaense_2019.png" ><span> ATHLÉTICO PR</span></td>
-                    <td>64</td>
-                    <td>38</td>
-                    <td>19</td>
-                    <td>10</td>
-                    <td>8</td>
-                    
-                </tr>
-
-                <tr class="pre-libertadores">
-                    <td class="team"> 5 <img src="imagens/Escudo_do_Sport_Club_Internacional.svg.png" ><span> INTERNACIONAL</span></td>
-                    <td>57</td>
-                    <td>38</td>
-                    <td>16</td>
-                    <td>12</td>
-                    <td>8</td>
-                </tr>
-
-                <tr class="pre-libertadores">
-                    <td class="team"> 6 <img src="imagens/Escudo_do_Fortaleza_EC.png" ><span> FORTALEZA</span></td>
-                    <td>56</td>
-                    <td>38</td>
-                    <td>14</td>
-                    <td>13</td>
-                    <td>8</td>
-                </tr>
-
-                <tr class="sul-americana">
-                    <td class="team" > 7 <img src="imagens/Brasao_do_Sao_Paulo_Futebol_Clube.svg.png" ><span> SÃO PAULO</span></td>
-                    <td>55</td>
-                    <td>38</td>
-                    <td>14</td>
-                    <td>15</td>
-                    <td>9</td>
-                </tr>
-
-                <tr class="sul-americana">
-                    <td> 8 <img src="imagens/red-bull-bragantino-logo-1.png" ><span>BRAGANTINO</span></td>
-                    <td>55</td>
-                    <td>38</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="sul-americana">
-                    <td class="team" > 9 <img src="imagens/logo-flamengo.png" ><span>FLAMENGO</span></td>
-                    <td>52</td>
-                    <td>38</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="sul-americana">
-                    <td> 10 <img src="imagens/bahia-logo.png" ><span>BAHIA</span></td>
-                    <td>51</td>
-                    <td>38</td>
-                    <td>14</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="sul-americana">
-                    <td> 11 <img src="imagens/botafogo-logo.png" ><span> BOTAFOGO</span></td>
-                    <td>49</td>
-                    <td>38</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="sul-americana">
-                    <td> 12 <img src="imagens/alt-mg-logo.png" ><span>ATLÉTICO-MG</span></td>
-                    <td>47</td>
-                    <td>38</td>
-                    <td>13</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-
-                <tr class="sul-americana">
-                    <td> 13 <img src="imagens/Fluminense_FC_escudo.png" ><span> FLUMINENSE</span></td>
-                    <td>47</td>
-                    <td>38</td>
-                    <td>11</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="sul-americana">
-                    <td> 14 <img src="imagens/Corinthians_simbolo.png" ><span> CORINTHIANS</span></td>
-                    <td>46</td>
-                    <td>38</td>
-                    <td>10</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="sul-americana">
-                    <td> 15 <img src="imagens/vitoria-logo.png" ><span> VITÓRIA</span></td>
-                    <td>45</td>
-                    <td>38</td>
-                    <td>8</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="sul-americana">
-                    <td> 16 <img src="imagens/logo-criciuma.png" ><span> CRICIÚMA</span></td>
-                    <td>44</td>
-                    <td>38</td>
-                    <td>6</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-
-                <tr class="zona-rebaixamento">
-                    <td> 17 <img src="imagens/cuiaba-logo-escudo.png" ><span> CUIABÁ</span></td>
-                    <td>43</td>
-                    <td>38</td>
-                    <td>7</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="zona-rebaixamento">
-                    <td> 18 <img src="imagens/vasco-logo.png" ><span> VASCO</span></td>
-                    <td>41</td>
-                    <td>38</td>
-                    <td>7</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="zona-rebaixamento">
-                    <td> 19 <img src="imagens/Atlético_Goianiense-logo.png" ><span> ATLÉTICO-GO</span></td>
-                    <td>39</td>
-                    <td>38</td>
-                    <td>7</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-
-                <tr class="zona-rebaixamento">
-                    <td> 20 <img src="imagens/juventude-logo.png" ><span>JUVENTUDE</span></td>
-                    <td>34</td>
-                    <td>38</td>
-                    <td>5</td>
-                    <td>13</td>
-                    <td>10</td>
-                </tr>
-        
-            </table> 
-         
-      </section>
-
-      <section class="materias">  <!-- MATERIAS DE DESTAQUES LATERAL --> 
-
-        <div class="interface">
-
-            <article>
-                    
-                <h3>DESTAQUES DA SEMANA</h3>
+                        <tr class="vaga-libertadores"> 
+                        <td class="team" > 1 <img src="imagens/Escudo_Cruzeiro_1996.png" ><span> CRUZEIRO</span></td>
+                        <td> 77 </td>
+                        <td>38</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>8</td>
+                        </tr>
                 
-                <img src="imagens/vasco-rebaixado.jpg" alt="">
-
-                <p>Vasco irá disputar a <a href="#">Serie B</a> mais uma vez.</p>
-
-                <img src="imagens/cruzeiroxpalmeiras.webp" alt="">
-
-                <p> 
-                    Cruzeiro vence Palmeiras na última rodada em duelo de título.
-                </p>
+                        <tr class="vaga-libertadores">
+                            <td class="team"> 2 <img src="imagens/Palmeiras_logo.svg.webp"><span> PALMEIRAS</span></td>
+                        <td>73</td>
+                        <td>38</td>
+                        <td>19</td>
+                        <td>9</td>
+                        <td>8</td>
+                        </tr>
+                        
+                        <tr class="vaga-libertadores">
+                            <td class="team"> 3 <img src="imagens/Gremio_logo.png" ><span> GRÊMIO</span></td>
+                            <td>66</td>
+                            <td>38</td>
+                            <td>19</td>
+                            <td>11</td>
+                            <td>7</td>
+                        </tr>
+        
+                        <tr class="vaga-libertadores">
+                            <td class="team" > 4 <img src="imagens/Club_Athletico_Paranaense_2019.png" ><span> ATHLÉTICO PR</span></td>
+                            <td>64</td>
+                            <td>38</td>
+                            <td>19</td>
+                            <td>10</td>
+                            <td>8</td>
+                            
+                        </tr>
+        
+                        <tr class="pre-libertadores">
+                            <td class="team"> 5 <img src="imagens/Escudo_do_Sport_Club_Internacional.svg.png" ><span> INTERNACIONAL</span></td>
+                            <td>57</td>
+                            <td>38</td>
+                            <td>16</td>
+                            <td>12</td>
+                            <td>8</td>
+                        </tr>
+        
+                        <tr class="pre-libertadores">
+                            <td class="team"> 6 <img src="imagens/Escudo_do_Fortaleza_EC.png" ><span> FORTALEZA</span></td>
+                            <td>56</td>
+                            <td>38</td>
+                            <td>14</td>
+                            <td>13</td>
+                            <td>8</td>
+                        </tr>
+        
+                        <tr class="sul-americana">
+                            <td class="team" > 7 <img src="imagens/Brasao_do_Sao_Paulo_Futebol_Clube.svg.png" ><span> SÃO PAULO</span></td>
+                            <td>55</td>
+                            <td>38</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>9</td>
+                        </tr>
+        
+                        <tr class="sul-americana">
+                            <td> 8 <img src="imagens/red-bull-bragantino-logo-1.png" ><span>BRAGANTINO</span></td>
+                            <td>55</td>
+                            <td>38</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="sul-americana">
+                            <td class="team" > 9 <img src="imagens/logo-flamengo.png" ><span>FLAMENGO</span></td>
+                            <td>52</td>
+                            <td>38</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="sul-americana">
+                            <td> 10 <img src="imagens/bahia-logo.png" ><span>BAHIA</span></td>
+                            <td>51</td>
+                            <td>38</td>
+                            <td>14</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="sul-americana">
+                            <td> 11 <img src="imagens/botafogo-logo.png" ><span> BOTAFOGO</span></td>
+                            <td>49</td>
+                            <td>38</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="sul-americana">
+                            <td> 12 <img src="imagens/alt-mg-logo.png" ><span>ATLÉTICO-MG</span></td>
+                            <td>47</td>
+                            <td>38</td>
+                            <td>13</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+        
+                        <tr class="sul-americana">
+                            <td> 13 <img src="imagens/Fluminense_FC_escudo.png" ><span> FLUMINENSE</span></td>
+                            <td>47</td>
+                            <td>38</td>
+                            <td>11</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="sul-americana">
+                            <td> 14 <img src="imagens/Corinthians_simbolo.png" ><span> CORINTHIANS</span></td>
+                            <td>46</td>
+                            <td>38</td>
+                            <td>10</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="sul-americana">
+                            <td> 15 <img src="imagens/vitoria-logo.png" ><span> VITÓRIA</span></td>
+                            <td>45</td>
+                            <td>38</td>
+                            <td>8</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="sul-americana">
+                            <td> 16 <img src="imagens/logo-criciuma.png" ><span> CRICIÚMA</span></td>
+                            <td>44</td>
+                            <td>38</td>
+                            <td>6</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+        
+                        <tr class="zona-rebaixamento">
+                            <td> 17 <img src="imagens/cuiaba-logo-escudo.png" ><span> CUIABÁ</span></td>
+                            <td>43</td>
+                            <td>38</td>
+                            <td>7</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="zona-rebaixamento">
+                            <td> 18 <img src="imagens/vasco-logo.png" ><span> VASCO</span></td>
+                            <td>41</td>
+                            <td>38</td>
+                            <td>7</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="zona-rebaixamento">
+                            <td> 19 <img src="imagens/Atlético_Goianiense-logo.png" ><span> ATLÉTICO-GO</span></td>
+                            <td>39</td>
+                            <td>38</td>
+                            <td>7</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+        
+                        <tr class="zona-rebaixamento">
+                            <td> 20 <img src="imagens/juventude-logo.png" ><span>JUVENTUDE</span></td>
+                            <td>34</td>
+                            <td>38</td>
+                            <td>5</td>
+                            <td>13</td>
+                            <td>10</td>
+                        </tr>
+                
+                    </table> 
                  
-            </article>
+                </section>
+        
+                
+                <section class="rodadas">  <!-- RODADAS -->
+                    <!-- Botões de navegação -->
+                    <div class="pagination-buttons">
+                        <button onclick="previousRound()"><i class="material-icons">chevron_left</i></button>
+                        <button onclick="nextRound()"><i class="material-icons">chevron_right</i></button>
+                    </div>
+                    
+                    <!-- Rodada 1 -->
+                    <div class="rodada active" id="rodada1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rodada 1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <form action="processa_placar.php" method="post">
+                                    <table>
+                                        <tr class="alinhamento">
+                                            <td class="teamOne">
+                                                <img src="imagens/Gremio_logo.png">
+                                                <span>Grêmio</span>
+                                                <input type="number" name="gremio_placar" min="0" max="99">
+                                            </td>
+                                            <td>X</td>
+                                            <td class="teamOne">
+                                                <input type="number" name="cruzeiro_placar" min="0" max="99">
+                                                <img src="imagens/Escudo_Cruzeiro_1996.png">
+                                                <span>Cruzeiro</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="alinhamento">
+                                            <td class="teamOne">
+                                                <img src="imagens/juventude-logo.png">
+                                                <span>Juventude</span>
+                                                <input type="number" name="juventude_placar" min="0" max="99">
+                                            </td>
+                                            <td>X</td>
+                                            <td class="teamOne">
+                                                <input type="number" name="vasco_placar" min="0" max="99">
+                                                <img src="imagens/vasco-logo.png">
+                                                <span>Vasco</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="alinhamento">
+                                            <td class="teamOne">
+                                                <img src="imagens/cuiaba-logo-escudo.png">
+                                                <span>Cuiabá</span>
+                                                <input type="number" name="cuiaba_placar" min="0" max="99">
+                                            </td>
+                                            <td>X</td>
+                                            <td class="teamOne">
+                                                <input type="number" name="botafogo_placar" min="0" max="99">
+                                                <img src="imagens/botafogo-logo.png">
+                                                <span>Botafogo</span>
+                                            </td>
+                                        </tr>
 
-        </div>
+                                    </table>
+                                </form>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                
+                    <!-- Rodada 2 -->
+                    <div class="rodada" id="rodada2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rodada 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <form action="processa_placar.php" method="post">
+                                    <table>
+                                        <tr class="alinhamento">
+                                            <td class="teamOne">
+                                                <img src="imagens/Gremio_logo.png">
+                                                <span>Grêmio</span>
+                                                <input type="number" name="gremio_placar" min="0" max="99">
+                                            </td>
+                                            <td>X</td>
+                                            <td class="teamOne">
+                                                <input type="number" name="cruzeiro_placar" min="0" max="99">
+                                                <img src="imagens/Escudo_Cruzeiro_1996.png">
+                                                <span>Cruzeiro</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="alinhamento">
+                                            <td class="teamOne">
+                                                <img src="imagens/juventude-logo.png">
+                                                <span>Juventude</span>
+                                                <input type="number" name="juventude_placar" min="0" max="99">
+                                            </td>
+                                            <td>X</td>
+                                            <td class="teamOne">
+                                                <input type="number" name="vasco_placar" min="0" max="99">
+                                                <img src="imagens/vasco-logo.png">
+                                                <span>Vasco</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="alinhamento">
+                                            <td class="teamOne">
+                                                <img src="imagens/cuiaba-logo-escudo.png">
+                                                <span>Cuiabá</span>
+                                                <input type="number" name="cuiaba_placar" min="0" max="99">
+                                            </td>
+                                            <td>X</td>
+                                            <td class="teamOne">
+                                                <input type="number" name="botafogo_placar" min="0" max="99">
+                                                <img src="imagens/botafogo-logo.png">
+                                                <span>Botafogo</span>
+                                            </td>
+                                        </tr>
 
-      </section>
+                                    </table>
+                                </form>
+                                
+                            </tbody>
+                        </table>
+                    </div>
 
+                    <div class="rodada" id="rodada3">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rodada 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+ 
+                
+                                <tr>
+                                    <td class="teamOne"><img src="imagens/bahia-logo.png"> <span>Bahia</span></td>
+                                    <td>X</td>
+                                    <td class="teamOne"><img src="imagens/botafogo-logo.png"> <span>Botafogo</span></td>
+                                </tr>
+                
+                 
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                 
+            </div>
+        </main>
 
-    <section class="rodadas">  <!-- RODADAS DO CAMPEONATO --> 
-        <!-- Rodada 1 -->
-        <div class="rodada active" id="rodada1">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Rodada 1</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="teamOne"> <img src="imagens/Gremio_logo.png"> <span>Grêmio</span></td>
-                        <td>X</td>
-                        <td class="teamOne"> <img src="imagens/Escudo_Cruzeiro_1996.png"> <span>Cruzeiro</span> </td>
-                    </tr>
-
-                    <tr>
-                        <td class="teamOne"> <img src="imagens/Palmeiras_logo.svg.webp"> <span>Palmeiras</span></td>
-                        <td>X</td>
-                        <td class="teamOne"> <img src="imagens/Escudo_do_Fortaleza_EC.png"> <span>Fortaleza</span> </td>
-                    </tr>
-
-                    <tr>
-                        <td class="teamOne" > <img src="imagens/Brasao_do_Sao_Paulo_Futebol_Clube.svg.png"> <span>São Paulo</span></td>
-                        <td>X</td>
-                        <td class="teamOne"> <img src="imagens/red-bull-bragantino-logo-1.png"> <span>Bragantino</span> </td>
-                    </tr>
-                    <!-- Outras linhas da rodada 1 -->
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Rodada 2 -->
-        <div class="rodada" id="rodada2">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Rodada 2</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr></tr>
-                        <td class="teamOne"> <img src="imagens/Brasao_do_Sao_Paulo_Futebol_Clube.svg.png"> <span>São Paulo</span></td>
-                        <td>X</td>
-                        <td class="teamOne"> <img src="imagens/Palmeiras_logo.svg.webp"> <span>Palmeiras</span> </td>
-                    </tr>
-
-                    <tr></tr>
-                    <td class="teamOne"> <img src="imagens/Escudo_do_Fortaleza_EC.png"> <span>Fortaleza</span></td>
-                    <td>X</td>
-                    <td class="teamOne"> <img src="imagens/red-bull-bragantino-logo-1.png"> <span>Bragantino</span> </td>
-                </tr>
-
-                <tr>
-                    <td class="teamOne"> <img src="imagens/Escudo_Cruzeiro_1996.png"> <span>Cruzeiro</span></td>
-                    <td>X</td>
-                    <td class="teamOne"> <img src="imagens/Escudo_do_Sport_Club_Internacional.svg.png"> <span>Internacional</span> </td>
-                </tr>
-                    <!-- Outras linhas da rodada 2 -->
-                </tbody>
-            </table>
-        </div>
-
-
-        <!-- Botões de navegação -->
-        <div class="pagination-buttons">
-            <button onclick="previousRound()"><i class="material-icons">chevron_left</i></button>
-            <button onclick="nextRound()"><i class="material-icons">chevron_right</i></button>
-        </div>
-    </section>
-
-    <footer>
-        <p>projeto Realizado para fins pedagógicos</p>
-    </footer>
-
-   </main>
-
-   <script src="script.js"></script>
-   
-
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
