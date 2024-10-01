@@ -36,11 +36,15 @@ function mudouTamanho() {
     }
 }
 
-function clickMenu() {
-    var itens = document.getElementById('itens');
-    if (itens.style.display == 'block') {
-        itens.style.display = 'none';
+
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "imagens/menu_white_36dp.svg"
     } else {
-        itens.style.display = 'block';
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "imagens/close_white_36dp.svg"
     }
+
 }

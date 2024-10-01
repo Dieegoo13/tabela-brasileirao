@@ -8,16 +8,15 @@
 body {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    background-color: #bfe3f3a1;
+    background-color: #ffffff;
 }
 
 .interface{
-    max-width: 1280px;
     margin: 0 auto;
  }
 
  h3 {
-    color: #002fff;
+    color: #2c9104;
     font-family: "Varela Round", sans-serif;
     font-weight: 900;
     font-size: 28px;
@@ -27,45 +26,73 @@ body {
     font-size: 18px;
     font-weight: bold;
  }
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
   
-
-
  /* ESTILO DO CABEÇALHO */
 
- header {
+
+header {
+    background-color: #2c9104;
+    box-shadow: 0px 3px 10px #017e1c5d ;
+    margin-bottom: 30px;
+}
+
+.nav-bar {
     display: flex;
-    justify-content: space-between;
-    background-color: #040181;
-    padding: 30px;
-    margin-bottom: 50px;
- }
-
- header nav ul li {
-    display: inline-block;
-    padding: 20px;
- }
-
- header ul li a {
-    text-decoration: none;
-    color: #fff; 
-    padding: 50px;
-    transition: font-size 0.1s ease;
- }
-
- header a:hover {
-    color: #c1f804;
-    font-size: 17px;
-    transform: scale(1.15);
- }
+    justify-content: space-evenly;
+    padding: 1.5rem 6rem;
+}
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 180px;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
     width: 80px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+
+.nav-list a:hover  {
+    color: #2c9104;;
+    background-color: white;
+}
+
+ /* ESTILO D0 MENU HAMBURGUER */
+
+.mobile-menu-icon{
+  display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.open {
+    display: block;
 }
 
 /* CONFIGURAÇÔES DO CONTAINER PAI    */
@@ -84,8 +111,8 @@ body {
     margin-bottom: 30px;
     width: 380px;
     border-radius: 12px;
-    background-color: #ccf2f5d0;
-    box-shadow: 1px 1px 2px 2px #beeaf5;
+    background-color: #48ff0028;
+    box-shadow: 1px 1px 2px 2px #75e64962;
 }
 
 .materias .interface article h3 {
@@ -114,7 +141,7 @@ body {
     font-weight: 600;
 }
 .tabela-classificacao tr  th {
-    background-color: #b9f5e6d0;
+    background-color: #b1b3b1d0;
 }
 
 
@@ -157,8 +184,8 @@ table td, td {
     font-family: "Varela Round", sans-serif;
     font-weight: 600;
     height: 400px;
-    background-color: #ccf2f5d0;
-    box-shadow: 1px 1px 2px 2px #beeaf5;
+    background-color: #48ff0028;
+    box-shadow: 1px 1px 2px 2px #75e64962;
 }
  
 

@@ -21,37 +21,43 @@
 
 
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="media-query.css"> 
     <title>Tabela</title>
 </head>
 
 
     <header>
-         <div class="interface">
-              
-              <div class="logo">
-                  <img src="imagens/logo-brasileirao.png" alt="">
-              </div>
-        
+      
+        <nav class="nav-bar">    
+            
+            <div class="logo">
+                <a href="index.html"><img src="imagens/logo-brasileirao.png" alt="logo"></a>
+            </div>
 
-            <nav class="menu-desktop">
-                
-                
-                <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-
-                <menu id="itens">
+                <div class="nav-list">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Tabela</a></li>
-                        <li><a href="">Times</a></li>
-                        <li><a href="">Noticias</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Tabela</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Times</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
                     </ul>
-                </menu>
+                </div>
 
-            </nav>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+                </div>
+        </nav>
 
-         </div>
-    </header>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Tabela</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Times</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
+            </ul>
+
+        </div>
+    </header> 
     
     <body onresize="mudouTamanho()">
         
@@ -389,7 +395,7 @@
                                     <th>Rodada 2</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                          <tbody>
                                 <form action="processa_placar.php" method="post">
                                     <table>
                                         <tr class="alinhamento">
