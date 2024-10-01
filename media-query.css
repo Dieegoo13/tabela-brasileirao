@@ -1,8 +1,43 @@
 @media screen and  (max-width: 1200px){
     /* ESTILO HEADER */
+    header {
+        width: 65vh;
+    }
+    
     header ul li a {
         font-size: 14px;
     }
+
+
+    .nav-bar {
+        padding: 1.5rem 4rem; 
+       }
+    
+       .nav-item {
+        display: none;
+       }
+    
+       .mobile-menu-icon {
+        display: block;
+       }
+    
+       .mobile-menu-icon button{
+         background-color: transparent;
+         border: none;
+         cursor: pointer;
+       }
+    
+       .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+       }
+    
+       .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+       }
 
 
     /* ORDEM DE EXIBICAO */
@@ -25,13 +60,9 @@
         margin-bottom: 20px;
     }
 
-    .tabela-classificacao table {
-      width: 60px;
-    }
-
     .tabela-classificacao td, tr, span {
-        font-size: 12px;
-        padding: 10px;
+        font-size: 8px;
+        padding: 5px;
     }
 
     .tabela-classificacao > table  img {
@@ -92,34 +123,4 @@
 
 }
 
-@media screen and  (max-width: 730px) {
-   .nav-bar {
-    padding: 1.5rem 4rem; 
-   }
 
-   .nav-item {
-    display: none;
-   }
-
-   .mobile-menu-icon {
-    display: block;
-   }
-
-   .mobile-menu-icon button{
-     background-color: transparent;
-     border: none;
-     cursor: pointer;
-   }
-
-   .mobile-menu ul{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
-   }
-
-   .mobile-menu .nav-item {
-    display: block;
-    padding-top: 1.2rem;
-   }
-}
