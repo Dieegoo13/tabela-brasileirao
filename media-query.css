@@ -1,72 +1,36 @@
-@media screen and  (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     /* ESTILO HEADER */
-    header {
-        width: 65vh;
-    }
-    
+
     header ul li a {
-        font-size: 14px;
+        font-size: 0.875rem; 
     }
-
-
-    .nav-bar {
-        padding: 1.5rem 4rem; 
-       }
-    
-       .nav-item {
-        display: none;
-       }
-    
-       .mobile-menu-icon {
-        display: block;
-       }
-    
-       .mobile-menu-icon button{
-         background-color: transparent;
-         border: none;
-         cursor: pointer;
-       }
-    
-       .mobile-menu ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-       }
-    
-       .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-       }
-
 
     /* ORDEM DE EXIBICAO */
-
     .tabela-classificacao {
-        order: 1; /* A tabela será mostrada primeiro */
-     }
+        order: 1; 
+        margin-bottom: 1.25rem; 
+    }
 
     .materias {
-        order: 3; /* As matérias serão mostradas depois da tabela */
+        order: 3; 
     }
 
     .rodadas {
-        order: 2; /* As rodadas serão mostradas por último */
+        order: 2; 
     }
-    
-    /* ESTILO TABELA DE CLASSIFICACAO */
 
+    /* ESTILO TABELA DE CLASSIFICACAO */
     .tabela-classificacao {
-        margin-bottom: 20px;
+        margin: 0.625rem;
     }
 
     .tabela-classificacao td, tr, span {
-        font-size: 8px;
-        padding: 5px;
+        font-size: 0.75rem; 
+        padding: 0.7rem; 
     }
 
-    .tabela-classificacao > table  img {
-        width: 20px;
+    .tabela-classificacao > table img {
+        width: 1.25rem; 
     }
 
     .team {
@@ -75,52 +39,89 @@
     }
 
     /* ESTILO TABELA DAS RODADAS */
-
     .rodadas table img {
-        width: 25px;
-        padding: 10px;
+        width: 1.5625rem;
+        padding: 0.625rem;
     }
 
     .rodadas {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        flex-direction: column;
-        width: 400px;
-        height: 420px;
-        margin-bottom: 60px;
- 
+        height: 26.25rem; 
+        margin-bottom: 3.75rem;
+        margin-left: 1rem;
     }
 
     .rodadas table th {
-        font-size: 12spx;
+        font-size: 0.75rem;
+        padding-left: 9rem;
     }
+
+
 
     .teamOne {
         display: flex;
         align-items: center;
-        justify-content: center; 
-    } 
+        justify-content: center;
+    }
 
     .alinhamento {
         display: flex;
         justify-content: start;
-        align-items: center; 
-        gap: 10px; 
-    } 
+        align-items: center;
+        gap: 0.625rem; /* 10px */
+    }
 
-
-    .rodadas input[type="number"]  {
-    
-        margin: 0px;
-        padding: 8px;
-        width: 5px;
-        height: 5px;
-        font-size: 12px;  
+    .rodadas input[type="number"] {
+        margin: 0;
+        padding: 0.5rem;
+        width: 0.4rem;
+        height: 0.3125rem;
+        font-size: 0.75rem;
     }
 
 
-
+    .pagination-buttons {
+        display: flex;
+        align-items:end;
+    }
+    
+    .pagination-buttons button {
+        border: none;
+        background: none;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    
 }
 
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
 
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+}
