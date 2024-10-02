@@ -11,15 +11,12 @@ body {
 }
 
 .interface {
+    display: flex;
+    width: 100%; 
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
-h3 {
-    color: #2c9104;
-    font-family: "Varela Round", sans-serif;
-    font-weight: 900;
-    font-size: 1.75rem;
-}
 
 p {
     font-size: 1.125rem;
@@ -51,6 +48,7 @@ header {
 .nav-list ul {
     display: flex;
     list-style: none;
+    margin-top: 2rem;
 }
 
 .nav-item {
@@ -94,19 +92,27 @@ header {
 
 .materias article h3 {
     margin-bottom: 1.25rem;
-    text-align: left;
-    text-shadow: 0.125rem 0.125rem 0px rgba(29, 29, 29, 0.863);
+    text-align: center;
+    color: #2c9104;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 1.45rem;
 }
 
 .materias article img {
-    margin: 0.625rem 0;
+    margin: 1.30rem;
     width: 12.5rem;
     border-radius: 0.5rem;
-    box-shadow: 0.625rem 0.625rem 1.875rem 0.3125rem rgba(0, 0, 0, 0.658);
+    box-shadow: 0.625rem 0.625rem 1.875rem 0.3125rem rgba(68, 68, 68, 0.658);
 }
 
 .materias article p {
     font-size: 0.875rem;
+}
+
+.materias article a {
+    color: #1900ff;
+    font-size: 15px;
 }
 
 /* ESTILOS DA TABELA */

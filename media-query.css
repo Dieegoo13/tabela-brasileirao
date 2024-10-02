@@ -1,129 +1,133 @@
 @media screen and (max-width: 1200px) {
-    /* ESTILO HEADER */
+    /* ESTILO GERAL */
+  
+    .titulo {
+       font-size: 1.4rem;
+       text-align: center;
+   }
+ 
+   /* ESTILO HEADER */
 
-    header ul li a {
-        font-size: 0.875rem; 
-    }
+   header ul li a {
+       font-size: 0.875rem; 
+   }
 
-    /* ORDEM DE EXIBICAO */
-    .tabela-classificacao {
-        order: 1; 
-        margin-bottom: 1.25rem; 
-    }
+   /* ORDEM DE EXIBICAO */
+   .tabela-classificacao {
+       order: 1; 
+       margin-bottom: 1.25rem; 
+   }
 
-    .materias {
-        order: 3; 
-    }
+   .materias {
+       order: 3; 
+   }
 
-    .rodadas {
-        order: 2; 
-    }
+   .rodadas {
+       order: 2; 
+   }
 
-    /* ESTILO TABELA DE CLASSIFICACAO */
-    .tabela-classificacao {
-        margin: 0.625rem;
-        margin-bottom: 1rem;
-    }
+   /* ESTILO TABELA DE CLASSIFICACAO */
+   .tabela-classificacao {
+       margin: 0.625rem;
+   }
 
-    .tabela-classificacao td, tr, span {
-        font-size: 0.75rem; 
-        padding: 0.7rem; 
-    }
+   .tabela-classificacao td, tr, span {
+       font-size: 0.75rem; 
+       padding: 0.7rem; 
+   }
 
-    .tabela-classificacao > table img {
-        width: 1.25rem; 
-    }
+   .tabela-classificacao > table img {
+       width: 1.25rem; 
+   }
 
-    .team {
-        display: flex;
-        align-items: center;
-    }
+   .team {
+       display: flex;
+       align-items: center;
+   }
 
-    /* ESTILO TABELA DAS RODADAS */
-    .rodadas table img {
-        width: 1.5625rem;
-        padding: 0.625rem;
-    }
+   /* ESTILO TABELA DAS RODADAS */
+   .rodadas table img {
+       width: 1.5625rem;
+       padding: 0.625rem;
+   }
 
-    .rodadas {
-        height: 26.25rem; 
-        margin-bottom: 1rem;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
+   .rodadas {
+       height: 26.25rem; 
+       margin-bottom: 3.75rem;
+       margin-left: 1rem;
+   }
 
-    .rodadas table th {
-        font-size: 0.75rem;
-        padding-left: 9rem;
-    }
+   .rodadas table th {
+       font-size: 0.75rem;
+       padding-left: 9rem;
+   }
 
+   .teamOne {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
 
+   .alinhamento {
+       display: flex;
+       justify-content: start;
+       align-items: center;
+       gap: 0.625rem; /* 10px */
+   }
 
-    .teamOne {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .alinhamento {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 0.625rem; /* 10px */
-    }
-
-    .rodadas input[type="number"] {
-        margin: 0;
-        padding: 0.5rem;
-        width: 16px;
-        height: 16px;
-        font-size: 0.75rem;
-    }
+   .rodadas input[type="number"] {
+       margin: 0;
+       padding: 0.5rem;
+       width: 15px;
+       height: 15px;
+       font-size: 0.75rem;
+   }
 
 
-    .pagination-buttons {
-        display: flex;
-        align-items:end;
-    }
-    
-    .pagination-buttons button {
-        border: none;
-        background: none;
-        font-size: 1rem;
-        cursor: pointer;
-        padding: 1rem;
-    }
-    
+   .pagination-buttons {
+       display: flex;
+       align-items:end;
+   }
+   
+   .pagination-buttons button {
+       border: none;
+       background: none;
+       font-size: 1rem;
+       cursor: pointer;
+       padding: 1rem;
+   }
+
+   
 }
 
 @media screen and (max-width: 730px) {
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
+   .nav-bar {
+       padding: 1.5rem 4rem;
+   }
 
-    .nav-item {
-        display: none;
-    }
+   .nav-item {
+       display: none;
+   }
 
-    .mobile-menu-icon {
-        display: block;
-    }
+   .mobile-menu-icon {
+       display: block;
+   }
 
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
+   .mobile-menu-icon button {
+       background-color: transparent;
+       border: none;
+       cursor: pointer;
+   }
 
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
+   .mobile-menu ul {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       padding-bottom: 1rem;
+   }
 
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
+   .mobile-menu .nav-item {
+       display: block;
+       padding-top: 1.2rem;
+   }
 }
