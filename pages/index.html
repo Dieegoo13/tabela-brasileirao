@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTES DO GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- FIM FONTES DO GOOGLE -->
+
+    <!-- GOOGLE ICONS -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- FIM GOOGLE ICONS -->
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/media-query.css">
+    <title>Tabela</title>
+</head>
+
+<header>
+
+    <nav class="nav-bar">
+
+        <div class="logo">
+            <a href="index.html"><img src="../assets/imagens/logo-brasileirao.png" alt="logo"></a>
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="simulador.html" class="nav-link">Simulador</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Times</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button id="btn_menu"><img class="icon" src="../assets/imagens/menu_white_36dp.svg" alt=""></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="simulador.html" class="nav-link">Simulador</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Times</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
+        </ul>
+
+    </div>
+</header>
+
+<body>
+
+    <main>
+        <div class="container">
+
+            <section class="materias"> <!-- MATERIAS DE DESTAQUES LATERAL -->
+                <h3 class="titulo">DESTAQUES DA SEMANA</h3>
+                <div class="interface">
+
+                    <article>
+
+                        <img src="../assets/imagens/vasco-rebaixado.png" alt="">
+
+                        <p>
+                            Vasco irá disputar a Série B mais uma vez.
+                            <br> <a href="">Veja Mais</a>
+                        </p>
+
+                        <img src="../assets/imagens/cruzeiroxpalmeiras.webp" alt="">
+
+                        <p>
+                            Cruzeiro vence Palmeiras na última rodada em duelo de título.
+                            <br> <a href="">Veja Mais</a>
+                        </p>
+
+                        <img src="../assets/imagens/copa-internacional.png" alt="">
+
+                        <p>Confira os times que se classificaram para Conmebol Libertadores e Sulamericana.
+                            <br> <a href="">Veja Mais</a>
+                        </p>
+
+                        <img src="../assets/imagens/fantasma-serieb.png" alt="">
+
+                        <p>
+                            Confira os times que irão disputar a Serie B do Brasileirão no proximo ano.
+                            <br> <a href="">Veja Mais</a>
+                        </p>
+
+                        <img src="../assets/imagens/janela-transferencia.png" alt="">
+
+                        <p>Times já se movimentam atrás de reforços.
+                            <br> <a href="">Veja Mais</a>
+                        </p>
+
+                        <img src="../assets/imagens/estadios.png" alt="">
+
+                        <p>
+                            Confira os estádios da Série A do Brasileirão.
+                            <br> <a href="">Veja Mais</a>
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="tabela-classificacao"> <!--  TABELA DE CLASSIFICAÇÃO -->
+                <h2>BRASILEIRÃO 2024</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> #Time</th>
+                            <th>P</th>
+                            <th>J</th>
+                            <th>V</th>
+                            <th>E</th>
+                            <th>D</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabela-classificacao-corpo">
+                        
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <section class="rodadas"> <!-- RODADAS -->
+                <h2>JOGOS</h2>
+                <div class="linha cabecalho">
+                    <img src="../assets/imagens/setaEsquerda.svg" alt="" style="cursor: pointer;" id="btn_proxima">
+                    <h3 id="rodada-atual">1° Rodada</h3>
+                    <img src="../assets/imagens/setaDireita.svg" alt="" style="cursor: pointer;"" id="btn_anterior">
+                </div>
+
+                <div id="tabela-jogos-corpo" class="tabela-jogos-corpo">
+
+
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy;
+            Site fictício. Criado apenas para fins pedagógicos.
+        </p>
+    </footer>
+
+    <script src="../js/utils.js" type="module" defer></script>
+    <script src="../js/script.js" type="module"></script>
+
+</body>
+
+</html>
